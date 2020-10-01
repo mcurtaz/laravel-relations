@@ -10,4 +10,9 @@ class Location extends Model
         'name',
         'city'
     ];
+
+    public function employees()
+    {
+        return $this->belongsToMany(Employee::class);
+    }
 }

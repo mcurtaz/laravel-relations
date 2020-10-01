@@ -10,4 +10,9 @@ class Task extends Model
         'name',	
         'description'
     ];
+
+    public function employees()
+    {
+        return $this->belongsToMany(Employee::class);
+    }
 }
