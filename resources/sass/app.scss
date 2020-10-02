@@ -57,6 +57,12 @@ header{
         font-size: 30px;
     }
 
+    h4{
+        text-align: center;
+        padding: 15px;
+        font-size: 24px;
+    }
+
     ul{
 
         li{
@@ -66,6 +72,18 @@ header{
 
    
     background-color: #e0e8ee;
+}
+
+.nav{
+    ul{
+        list-style: none;
+        text-align: center;
+        li{
+            display: inline-block;
+            padding: 15px;
+            font-size: 20px;
+        }
+    }
 }
 
 

@@ -5,8 +5,10 @@
         <ul>
             @foreach ($employees as $employee)
                 <li>
-                    {{ $employee -> name }}
-                    {{ $employee -> lastname }}
+                    <a href=" {{ route('employee-show', $employee -> id) }} ">
+                        {{ $employee -> name }}
+                        {{ $employee -> lastname }}
+                    </a>
                 </li>
             @endforeach
         </ul>
