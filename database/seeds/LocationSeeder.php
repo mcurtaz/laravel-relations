@@ -12,6 +12,7 @@ class LocationSeeder extends Seeder
      */
     public function run()
     {
-        factory(Location::class, 50) -> create();
+        // il seeder della tabella location è il più semplice in quanto la tabella non ha chiavi esterne. Verrà lanciato per primo e popolerà la tabella con dati fake creati dal faker nella factory. NOTE: è importante che sia richiamato il model della tabella corrispondente con use App\Location;
+        factory(Location::class, 10) -> create();
     }
 }
